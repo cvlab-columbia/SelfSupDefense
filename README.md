@@ -19,7 +19,7 @@ to train SSL, do not use `--eval_only`, and vice versa.
 #### Semi-SL  Carmon et. al.
 
 * Do not do std, mean normalize, they just use 0-1.
-* Download Carmon et. al.'s model: 
+* Download Carmon et. al.'s model:  [RobustBackboneClassifier: cifar10_rst_adv.pt.ckpt](https://cv.cs.columbia.edu/mcz/ICCVRevAttack/cifar10_rst_adv.pt.ckpt), [Our SSL Model: ssl_model_130.pth](https://cv.cs.columbia.edu/mcz/ICCVRevAttack/ssl_model_130.pth)
 * Train SSL: `CUDA_VISIBLE_DEVICES=0 python cifar10_defense.py --fname unlab_cifar10_srn28-10_carmon --md_path /local/rcs/mcz/2021Spring/RobPretrained/unlabeled-rob/cifar10_rst_adv.pt.ckpt --carmon`
 * Test: `CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python cifar10_defense.py --fname test --md_path /local/rcs/mcz/2021Spring/RobPretrained/unlabeled-rob/cifar10_rst_adv.pt.ckpt --carmon --eval_only --ssl_model_path /local/rcs/mcz/2021Spring/SSRobdata/unlab_cifar10_srn28-10_carmon/March1/ssl_model_130.pth`
 
