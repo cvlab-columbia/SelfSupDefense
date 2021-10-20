@@ -2,13 +2,13 @@
 ICCV2021
 ## Citation
 ```
-@misc{mao2021adversarial,
-      title={Adversarial Attacks are Reversible with Natural Supervision}, 
-      author={Chengzhi Mao and Mia Chiquier and Hao Wang and Junfeng Yang and Carl Vondrick},
-      year={2021},
-      eprint={2103.14222},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Mao_2021_ICCV,
+    author    = {Mao, Chengzhi and Chiquier, Mia and Wang, Hao and Yang, Junfeng and Vondrick, Carl},
+    title     = {Adversarial Attacks Are Reversible With Natural Supervision},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {661-671}
 }
 ```
 
