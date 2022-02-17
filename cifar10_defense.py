@@ -431,7 +431,6 @@ def attack_CW(model, X, y, epsilon, alpha, attack_iters, restarts,
         max_loss = torch.max(max_loss, all_loss)
     return max_delta
 
-# TODO: bug here, even random noise decrease rob acc on medium model.
 
 # simple Module to normalize an image
 class Normalize(nn.Module):
